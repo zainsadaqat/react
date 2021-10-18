@@ -7,3 +7,9 @@ there are plenty of libraries developed around React, to add features or improve
 ## Virtual DOM
 
 React manipulates the DOM, but DOM manipulation is slow. To solve this problem, React uses a virtual DOM, which is a representation (in memory) of the DOM. React keeps track of the changes in the virtual DOM and updates the actual DOM only as needed, making it really fast.
+
+A virtual DOM object has the same properties as a real DOM object, but it lacks the real thing’s power to directly change what’s on the screen.
+
+Manipulating the DOM is slow. Manipulating the virtual DOM is much faster, because nothing gets drawn onscreen. Think of manipulating the virtual DOM as editing a blueprint, as opposed to moving rooms in an actual house.
+
+
