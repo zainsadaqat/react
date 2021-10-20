@@ -28,4 +28,27 @@ A React application is not composed of a single (and huge) component. Even if it
 
 JavaScript has different kinds of events: browser events (load, unload, scroll, etc.), mouse events (click, double click), keyboard events (key down/up), form events (submit), HTML element events, and even CSS events.
 
+## Lifecycle methods
+
+Every phase of the lifecycle of a component has its own methods. Sometimes a method is available in more than one phase.
+
+1. Mounting (putting elements in the DOM):
+
+constructor().
+getDerivedStateFromProps().
+render() (mandatory).
+componentDidMount().
+
+2. Updating (props or state changes):
+
+getDerivedStateFromProps().
+shouldComponentUpdate().
+render() (mandatory).
+getSnapshotBeforeUpdate().
+componentDidUpdate().
+
+3. Unmounting (element is removed from the DOM):
+
+componentWillUnmount()
+
 
