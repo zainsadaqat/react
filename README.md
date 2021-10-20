@@ -23,3 +23,9 @@ As you already learned in the components lesson of this module, React components
 ## Props
 
 A React application is not composed of a single (and huge) component. Even if it's technically possible, is not practical. React is a component-based library and it expects you to break the UI into a component hierarchy. In other words, you may have a root component, and it will have children. You can pass data from parent to children using props (like passing arguments to a function).
+
+## Handling events
+
+JavaScript has different kinds of events: browser events (load, unload, scroll, etc.), mouse events (click, double click), keyboard events (key down/up), form events (submit), HTML element events, and even CSS events.
+
+
