@@ -34,21 +34,21 @@ Every phase of the lifecycle of a component has its own methods. Sometimes a met
 
 1. Mounting (putting elements in the DOM):
 
-constructor().
-getDerivedStateFromProps().
-render() (mandatory).
-componentDidMount().
+`constructor()`
+`getDerivedStateFromProps()`
+`render()` (mandatory)
+`componentDidMount()`
 
 2. Updating (props or state changes):
 
-getDerivedStateFromProps().
-shouldComponentUpdate().
-render() (mandatory).
-getSnapshotBeforeUpdate().
-componentDidUpdate().
+`getDerivedStateFromProps()`
+`shouldComponentUpdate()`
+`render() (mandatory)`
+`getSnapshotBeforeUpdate()`
+`componentDidUpdate()`
 
 3. Unmounting (element is removed from the DOM):
 
-componentWillUnmount()
+`componentWillUnmount()`
 
 
