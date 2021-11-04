@@ -70,5 +70,25 @@ now we need to install few dependencies
 
 `npm install redux react-redux`
 
+### Steps
+
+1. Create Reducers ( a function that takes two parameters (state, action)
+
+2. Combine all reducers ( combine all the reducers as a root )
+
+3. Create a store ( store uses that combined reducer and passed as a parameter, createStore(reducers)
+
+> Now, we need to hook up that store with our React application but first we need to make our store available for all our components.
+> for this, we need to wrap our App component with Provider component
+
+To Access data in the store, we use useSelector hook
+
+4. Access data from store useSelector((state) => state)
+
+5. Create action creators to update our stores ( Action creator is just a function that dispatches an action )
+
+6. useDispatch is using asynchronous code and To help redux use asynchronous code , we use redux-thunk library `npm install redux-thunk`
+
+
 
 
