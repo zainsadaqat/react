@@ -52,3 +52,23 @@ Every phase of the lifecycle of a component has its own methods. Sometimes a met
 `componentWillUnmount()`
 
 
+## React and Redux (with Hooks)
+
+Termonologies used is redux:
+
+`Action` `Action Creator` `Action Type` `Action Payload` `Dispatch` `Reducer` `Store`
+
+Redux Data Flow 
+
+`UI -> Action Creator -> Action Type and Action Payload -> Dispatch - > Reducer -> Store -> Updated UI`
+
+> Let's dive into it
+
+`npx create-react-app react-with-redux --template redux` // use `--template redux` only if you're comfortable with redux
+
+now we need to install few dependencies 
+
+`npm install redux react-redux`
+
+
+
