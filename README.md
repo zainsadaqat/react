@@ -89,6 +89,10 @@ To Access data in the store, we use useSelector hook
 
 6. useDispatch is using asynchronous code and To help redux use asynchronous code , we use redux-thunk library `npm install redux-thunk`
 
+### Fetch API
+
+
+
 
 
 
