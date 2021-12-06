@@ -89,7 +89,32 @@ To Access data in the store, we use useSelector hook
 
 6. useDispatch is using asynchronous code and To help redux use asynchronous code , we use redux-thunk library `npm install redux-thunk`
 
-### Fetch API
+## React Hooks
+
+### useState Hook
+Hooks only work inside of functional components and we can't put hooks inside of any block or nest them. it must be on the top level of functional component.
+```
+const Hooks = () => {
+const [count, setCount] = useState();
+count is the state of Hooks Component and setCount is a function that's used to update the value of count state. Each time state value changes. It re-renders the whole component with the new value of count.
+
+const decrementCount = () => {
+  setCount((prev) => prev - 1)
+}
+
+const incrementCount = () => {
+  setCount((prev) => prev + 1)
+}
+
+return (
+  <>
+    <button type="button">-</button>
+    <span>{count}</span>
+    <button type="button">+</button>
+  </>
+  )
+}
+```
 
 
 
