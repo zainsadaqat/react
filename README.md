@@ -121,6 +121,12 @@ return (
 ```
 initialState = { favoriteRecipes: [], allRecipes: [], search: '' }
 
+const reducer = (state = initialState, action) => {
+  switch(action.type) {
+    case 'favoriteRecipe':
+      return { ...state, favoriteRecipes: [...state, action.payload] }
+  }
+}
 ```
 
 
