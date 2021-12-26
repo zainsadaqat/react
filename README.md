@@ -125,6 +125,8 @@ const reducer = (state = initialState, action) => {
   switch(action.type) {
     case 'favoriteRecipe':
       return { ...state, favoriteRecipes: [...state, action.payload] }
+    case 'addRecipe':
+      return { ...state, addRecipe: [...state, action.payload] }
   }
 }
 ```
