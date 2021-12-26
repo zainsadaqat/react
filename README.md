@@ -116,6 +116,13 @@ return (
 }
 ```
 
+## Complex Reducers
+
+```
+initialState = { favoriteRecipes: [], allRecipes: [], search: '' }
+
+```
+
 
 
 
