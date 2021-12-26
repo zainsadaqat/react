@@ -126,7 +126,13 @@ const reducer = (state = initialState, action) => {
     case 'favoriteRecipe':
       return { ...state, favoriteRecipes: [...state, action.payload] }
     case 'addRecipe':
-      return { ...state, addRecipe: [...state, action.payload] }
+      return {...state, allRecipes: [ ...state.allRecipes, action.payload ]}
+    case 'toogleRecipe':
+      return {...state, allRecipes: state.allRecipes.map(recipe => {
+        return (recipe.id === action.payload.id) ? {...recipe, completed: !recipe.completed} : recipe;
+      })
+    default:
+      return state;
   }
 }
 ```
