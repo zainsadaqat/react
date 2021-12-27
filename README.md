@@ -116,7 +116,28 @@ return (
 }
 ```
 
-## Complex Reducers
+### useEffect Hook
+
+**Syntax:** useEffect(<function>, <dependency>)
+
+```
+  
+import { useState, useEffect } from 'react'
+  
+const [count, setCount] = useState(0);
+
+useEffect(() => {
+  setTimeout(() => {
+    setCount(prev => prev + 1)
+  }, 1000)
+}) // useEffect without any dependency array runs after each render
+  
+```
+  
+  
+## Redux
+
+### Complex Reducers
 
 ```
 initialState = { favoriteRecipes: [], allRecipes: [], search: '' }
@@ -136,6 +157,7 @@ const reducer = (state = initialState, action) => {
   }
 }
 ```
+
 
 
 
