@@ -118,10 +118,9 @@ return (
 
 ### useEffect Hook
 
-**Syntax:** useEffect(<function>, <dependency>)
+**Syntax:** useEffect(function, dependency)
 
 ```
-  
 import { useState, useEffect } from 'react'
   
 const [count, setCount] = useState(0);
@@ -131,7 +130,31 @@ useEffect(() => {
     setCount(prev => prev + 1)
   }, 1000)
 }) // useEffect without any dependency array runs after each render
-  
+```
+
+#### 1. No dependency passed:
+
+```
+useEffect(() => {
+  //Runs on every render
+});
+```
+
+#### 2. An empty array:
+
+```
+useEffect(() => {
+  //Runs only on the first render
+}, []);
+```
+
+#### 3. Props or state values:
+
+```
+useEffect(() => {
+  //Runs on the first render
+  //And any time any dependency value changes
+}, [prop, state]);
 ```
   
   
