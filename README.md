@@ -156,7 +156,27 @@ useEffect(() => {
   //And any time any dependency value changes
 }, [prop, state]);
 ```
-  
+
+### useContext Hook
+
+It can be used together with the useState Hook to share state between deeply nested components more easily than with useState alone.
+
+```
+import {useState, createContext, useContext} from 'react';
+
+const UserContext = createContext();
+
+const Component1 = () => <UserContext.Provider value="Hey Prop"><Component2 /></>
+const Component2 = () => <><Component3 /></>
+const Component3 = () => <><Component4 /></>
+const Component4 = () => {
+user = useContext(UserContext)
+return (
+  <h2>User: {user} </h2>
+)
+}
+
+```
   
 ## Redux
 
